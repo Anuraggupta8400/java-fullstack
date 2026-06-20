@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the personal portfolio of John Doe, a Senior Frontend Developer specializing in accessible UI/UX, semantic HTML5, and pixel-perfect performance.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media Tags -->
+  <meta property="og:title" content="John Doe | Senior Frontend Developer & Accessibility Specialist">
+  <meta property="og:description" content="Building premium, inclusive digital experiences that balance strict WCAG standards with gorgeous visuals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/index.html">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://example.com/index.html">
+  
+  <title>John Doe | Senior Frontend Developer & Accessibility Specialist</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Doe",
+    "jobTitle": "Senior Frontend Developer",
+    "url": "https://example.com",
+    "sameAs": [
+      "https://github.com/johndoe",
+      "https://linkedin.com/in/johndoe"
+    ],
+    "description": "Senior Frontend Developer specializing in semantic HTML5, WCAG accessibility, and premium UI designs."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip to Content Link (WCAG 2.4.1 Bypass Blocks) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="John Doe Portfolio Home">
+        JohnDoe<span class="logo-dot">.</span>
+      </a>
+      
+      <!-- Hamburger Menu Toggle Button (Accessible states) -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+      
+      <!-- Navigation Menu -->
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="animate-fade" tabindex="-1">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Introduction Profile">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">Available for Projects</span>
+          <h1 class="hero-title">Crafting Premium, <span>Inclusive</span> Web Experiences</h1>
+          <p class="hero-description">
+            I am a senior frontend architect specializing in designing and developing web interfaces that balance strict WCAG 2.1 AA accessibility guidelines with state-of-the-art UI interactions.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View Portfolio Projects</a>
+            <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Philosophy Section -->
+    <section class="container" aria-labelledby="philosophy-title">
+      <h2 id="philosophy-title" class="section-title">Core Development Philosophy</h2>
+      <p class="section-subtitle">
+        Building for the web should always start with the user. Here are the core pillars that guide my technical execution.
+      </p>
+      
+      <div class="grid-3">
+        <!-- Pillar 1 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">♿</div>
+          <h3 class="card-title">Universal Accessibility</h3>
+          <p class="card-text">
+            Adhering strictly to modern Web Content Accessibility Guidelines (WCAG). Ensuring that keyboard users, screen reader users, and people with cognitive differences enjoy identical experiences.
+          </p>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🚀</div>
+          <h3 class="card-title">Lighthouse Performance</h3>
+          <p class="card-text">
+            Using optimized, semantic HTML tags, minimal runtime JavaScript, and highly optimized assets to secure 100-score rankings across SEO, performance, and accessibility metrics.
+          </p>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🎨</div>
+          <h3 class="card-title">Premium Aesthetics</h3>
+          <p class="card-text">
+            Beautifully integrated styles using cohesive color design, clean animations, and responsive micro-interactions that elevate the brand's aesthetic quality from first sight.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Call to Action (Semantic Aside) -->
+    <aside class="container" aria-labelledby="cta-title">
+      <div class="card" style="text-align: center; border-color: rgba(20, 184, 166, 0.25); background: linear-gradient(135deg, rgba(23, 32, 51, 0.7) 0%, rgba(31, 41, 61, 0.7) 100%);">
+        <h3 id="cta-title" class="card-title">Let's Partner on Your Next Digital Product</h3>
+        <p class="card-text" style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem;">
+          Whether you need an audit of your existing application's accessibility standards or a ground-up development of a new responsive product, I can help.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copyright">&copy; 2026 John Doe. All rights reserved. Designed for WCAG Compliance.</p>
+      
+      <!-- Social Media Navigation Links -->
+      <nav aria-label="Social Media Connections">
+        <ul class="footer-socials" style="list-style: none; display: flex; gap: 1rem;">
+          <li>
+            <a href="https://github.com" class="social-link" aria-label="GitHub Profile (opens in a new tab)" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn Profile (opens in a new tab)" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top of the page">
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
