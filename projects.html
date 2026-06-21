@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected projects by John Doe, a Senior Frontend Developer, showcasing accessible UI engineering, responsive design, and performance optimization.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Projects | John Doe — Senior Frontend Developer">
+  <meta property="og:description" content="A selection of accessible, responsive interfaces and design systems built by John Doe.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/projects.html">
+
+  <link rel="canonical" href="https://example.com/projects.html">
+
+  <title>Projects | John Doe — Senior Frontend Developer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projects by John Doe",
+    "url": "https://example.com/projects.html"
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="John Doe Portfolio Home">
+        JohnDoe<span class="logo-dot">.</span>
+      </a>
+
+      <div class="header-actions">
+        <nav id="primary-nav" aria-label="Primary Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link" aria-current="page">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+          <svg class="theme-toggle-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="animate-fade" tabindex="-1">
+
+    <section class="container" aria-labelledby="projects-title">
+      <h1 id="projects-title" class="section-title">Selected Projects</h1>
+      <p class="section-subtitle">
+        A few recent builds spanning accessible component systems, performance-critical marketing sites,
+        and end-to-end application interfaces.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;FinTrack /&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">FinTrack Budgeting Dashboard</h2>
+            <p class="card-text">
+              A WCAG AA compliant financial dashboard with keyboard-navigable charts and a screen-reader friendly
+              data table fallback for every visualization.
+            </p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>CSS Grid</li>
+              <li>ARIA</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for FinTrack Budgeting Dashboard (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;Marble/&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">Marble Studio Marketing Site</h2>
+            <p class="card-text">
+              A 100/100 Lighthouse performance build for a design agency, using semantic HTML5 and zero
+              render-blocking JavaScript.
+            </p>
+            <ul class="project-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Vanilla JS</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for Marble Studio Marketing Site (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;Compass /&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">Compass Accessible Design System</h2>
+            <p class="card-text">
+              A component library with built-in focus management, reduced-motion handling, and color-contrast
+              tokens, adopted across twelve internal products.
+            </p>
+            <ul class="project-tags">
+              <li>Design Systems</li>
+              <li>Storybook</li>
+              <li>WCAG 2.1 AA</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for Compass Accessible Design System (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;Northwind /&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">Northwind Booking Flow</h2>
+            <p class="card-text">
+              Rebuilt a five-step booking flow as an accessible, tab-navigable form sequence, reducing abandoned
+              sessions reported via support tickets.
+            </p>
+            <ul class="project-tags">
+              <li>Forms</li>
+              <li>Progressive Enhancement</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for Northwind Booking Flow (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;Lighthouse /&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">Lighthouse Audit Toolkit</h2>
+            <p class="card-text">
+              An internal CLI and reporting dashboard used to track accessibility and performance regressions
+              across client codebases pre-deploy.
+            </p>
+            <ul class="project-tags">
+              <li>Node.js</li>
+              <li>Automation</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for Lighthouse Audit Toolkit (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb" aria-hidden="true">&lt;TaskFlow /&gt;</div>
+          <div class="project-body">
+            <h2 class="card-title">TaskFlow To-Do Application</h2>
+            <p class="card-text">
+              A state-driven task manager with full CRUD, filtering, and localStorage persistence — built to
+              demonstrate clean DOM event delegation patterns.
+            </p>
+            <ul class="project-tags">
+              <li>JavaScript</li>
+              <li>localStorage</li>
+            </ul>
+            <a href="#" class="project-link" aria-label="View case study for TaskFlow To-Do Application (demo link)">
+              View case study →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <aside class="container" aria-labelledby="projects-cta-title">
+      <div class="card" style="text-align: center; border-color: rgba(20, 184, 166, 0.25); background: linear-gradient(135deg, var(--bg-card-alt) 0%, var(--bg-card) 100%);">
+        <h2 id="projects-cta-title" class="card-title">Have a Similar Project in Mind?</h2>
+        <p class="card-text" style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.05rem;">
+          I'm currently taking on new accessibility audits and frontend builds.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copyright">&copy; 2026 John Doe. All rights reserved. Designed for WCAG Compliance.</p>
+
+      <nav aria-label="Social Media Connections">
+        <ul class="footer-socials" style="list-style: none; display: flex; gap: 1rem;">
+          <li>
+            <a href="https://github.com" class="social-link" aria-label="GitHub Profile (opens in a new tab)" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn Profile (opens in a new tab)" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top of the page">
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
